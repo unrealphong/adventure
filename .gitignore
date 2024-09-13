@@ -4,3 +4,21 @@
 .DS_Store
 target/
 bin/
+
+# Terraform files
+*.tfstate
+*.tfstate.*
+*.backup
+.terraform/
+crash.log
+*.log
+.terraform.lock.hcl
+
+# Ignore tfvars files with sensitive data
+*.tfvars
+*.tfvars.json
+
+# Docker/Colima files
+docker-compose.override.yml
+.env
+
